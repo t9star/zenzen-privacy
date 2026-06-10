@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>プライバシーポリシー | 禅禅 (Zen Zen)</title>
+  <style>
+    :root {
+      --bg: #0f0f0f;
+      --surface: #1a1a1a;
+      --border: #2a2a2a;
+      --text: #e5e5e5;
+      --muted: #a1a1aa;
+      --accent: #f97316;
+      --accent2: #fb923c;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Noto Sans JP', sans-serif;
+      line-height: 1.8;
+      padding: 0 16px;
+    }
+    header {
+      background: linear-gradient(135deg, #1a0a00, #0f0f0f);
+      border-bottom: 1px solid var(--border);
+      padding: 32px 0 28px;
+      text-align: center;
+    }
+    header .logo {
+      font-size: 2.2rem;
+      font-weight: 900;
+      background: linear-gradient(90deg, var(--accent), var(--accent2));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      letter-spacing: 0.1em;
+    }
+    header p {
+      color: var(--muted);
+      font-size: 0.9rem;
+      margin-top: 6px;
+    }
+    .lang-toggle {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      margin: 24px auto 0;
+    }
+    .lang-btn {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      color: var(--muted);
+      border-radius: 20px;
+      padding: 6px 20px;
+      cursor: pointer;
+      font-size: 0.85rem;
+      transition: all 0.2s;
+    }
+    .lang-btn.active {
+      background: var(--accent);
+      border-color: var(--accent);
+      color: #fff;
+    }
+    main {
+      max-width: 760px;
+      margin: 40px auto 80px;
+    }
+    section { margin-bottom: 40px; }
+    h2 {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--accent);
+      border-left: 3px solid var(--accent);
+      padding-left: 12px;
+      margin-bottom: 14px;
+    }
+    p { color: var(--text); margin-bottom: 12px; font-size: 0.95rem; }
+    ul {
+      padding-left: 20px;
+      margin-bottom: 12px;
+    }
+    li { color: var(--text); margin-bottom: 6px; font-size: 0.95rem; }
+    a { color: var(--accent2); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 20px 24px;
+      margin-bottom: 16px;
+    }
+    .card h3 {
+      font-size: 1rem;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 8px;
+    }
+    .updated {
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.8rem;
+      margin-top: 60px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border);
+    }
+    .lang-ja, .lang-en { display: block; }
+    body.en .lang-ja { display: none; }
+    body.en .lang-en { display: block; }
+    body:not(.en) .lang-en { display: none; }
+    body:not(.en) .lang-ja { display: block; }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">禅禅</div>
+  <p>Zen Zen — Satisfying Fidgets</p>
+  <div class="lang-toggle">
+    <button class="lang-btn active" id="btn-ja" onclick="setLang('ja')">🇯🇵 日本語</button>
+    <button class="lang-btn" id="btn-en" onclick="setLang('en')">🇺🇸 English</button>
+  </div>
+</header>
+
+<main>
+
+  <!-- ====== 日本語 ====== -->
+  <div class="lang-ja">
+    <section>
+      <h2>プライバシーポリシー</h2>
+      <p>本プライバシーポリシーは、t9s（以下「当開発者」）が提供するAndroidアプリケーション「禅禅 (Zen Zen)」（パッケージ名：<code>jp.app.t9s.zenzen</code>、以下「本アプリ」）における、ユーザー情報の取り扱いについて説明するものです。</p>
+      <p>本アプリをご利用いただくことで、本ポリシーに同意いただいたものとみなします。</p>
+    </section>
+
+    <section>
+      <h2>収集する情報について</h2>
+      <p>当開発者は、本アプリを通じてユーザーの個人情報（氏名・メールアドレス・電話番号等）を直接収集することは一切ありません。</p>
+      <p>ただし、本アプリが利用するサードパーティサービスが以下の情報を自動的に収集する場合があります。</p>
+      <div class="card">
+        <h3>📱 デバイス情報・センサー</h3>
+        <p>本アプリは端末の加速度センサー（Accelerometer）を、砂の重力方向を制御する機能のためにのみ使用します。センサーのデータは端末内でのみ処理され、外部に送信されることはありません。</p>
+      </div>
+      <div class="card">
+        <h3>📊 広告（Google AdMob）</h3>
+        <p>本アプリは無料版において、Google LLC が提供する広告サービス「Google AdMob」を利用しています。AdMob は、より関連性の高い広告を表示するために、以下の情報を収集・使用する場合があります。</p>
+        <ul>
+          <li>広告ID（端末固有の広告識別子）</li>
+          <li>IPアドレス（おおよその位置情報）</li>
+          <li>アプリの使用状況に関する統計情報</li>
+          <li>デバイスの種類・OSバージョンなど</li>
+        </ul>
+        <p>AdMob のプライバシーポリシー：<a href="https://policies.google.com/privacy" target="_blank">https://policies.google.com/privacy</a></p>
+        <p>プレミアム版にアップグレードすると広告は完全に表示されなくなります。</p>
+      </div>
+      <div class="card">
+        <h3>💳 アプリ内課金（Google Play 請求サービス）</h3>
+        <p>本アプリはプレミアム機能のアンロックのために、Google Play の課金システムを利用しています。決済情報（クレジットカード情報等）はすべて Google LLC によって処理されるため、当開発者が決済情報を取得・保存することはありません。</p>
+        <p>Google Play の利用規約：<a href="https://play.google.com/about/play-terms/" target="_blank">https://play.google.com/about/play-terms/</a></p>
+      </div>
+    </section>
+
+    <section>
+      <h2>情報の利用目的</h2>
+      <p>本アプリが収集または利用するデータは、以下の目的に限定されます。</p>
+      <ul>
+        <li>アプリの機能提供（センサーによるゲームプレイ）</li>
+        <li>広告の配信（無料版のみ）</li>
+        <li>アプリ内購入の処理</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>第三者への情報提供</h2>
+      <p>当開発者は、法令に基づく場合を除き、ユーザーの情報をいかなる第三者にも販売・貸与・開示することはありません。本ポリシーに記載のサードパーティサービス（Google AdMob、Google Play Billing）は、各社のプライバシーポリシーに従って情報を処理します。</p>
+    </section>
+
+    <section>
+      <h2>お子様のプライバシー</h2>
+      <p>本アプリは全年齢を対象としており、13歳未満のお子様から意図的に個人情報を収集することはありません。広告IDの収集は、端末の設定から「広告のパーソナライズをオプトアウト」することで制限できます。</p>
+    </section>
+
+    <section>
+      <h2>プライバシーポリシーの変更</h2>
+      <p>本ポリシーは予告なく変更される場合があります。変更後のポリシーは本ページに掲載した時点で効力を生じるものとします。重要な変更がある場合はアプリのアップデートにてお知らせします。</p>
+    </section>
+
+    <section>
+      <h2>お問い合わせ</h2>
+      <p>本プライバシーポリシーに関するご質問は、以下のGoogle Playストアページのデベロッパー情報よりお問い合わせください。</p>
+      <p>アプリ：<strong>禅禅 (Zen Zen)</strong>　パッケージ名：<code>jp.app.t9s.zenzen</code></p>
+    </section>
+  </div>
+
+  <!-- ====== English ====== -->
+  <div class="lang-en">
+    <section>
+      <h2>Privacy Policy</h2>
+      <p>This Privacy Policy describes how t9s ("the Developer") handles user information in the Android application "Zen Zen" (package name: <code>jp.app.t9s.zenzen</code>, "the App").</p>
+      <p>By using this App, you agree to the terms of this Privacy Policy.</p>
+    </section>
+
+    <section>
+      <h2>Information We Collect</h2>
+      <p>The Developer does not directly collect any personal information (such as name, email address, or phone number) through this App.</p>
+      <p>However, third-party services integrated into the App may automatically collect certain data as described below.</p>
+      <div class="card">
+        <h3>📱 Device Sensors</h3>
+        <p>The App uses the device's Accelerometer sensor solely to control the direction of gravity in the sand simulation feature. Sensor data is processed entirely on-device and is never transmitted externally.</p>
+      </div>
+      <div class="card">
+        <h3>📊 Advertising (Google AdMob)</h3>
+        <p>The free version of this App uses Google AdMob, an advertising service provided by Google LLC. AdMob may collect and use the following data to serve relevant advertisements:</p>
+        <ul>
+          <li>Advertising ID (a device-specific, resettable identifier)</li>
+          <li>IP address (approximate location)</li>
+          <li>App usage statistics</li>
+          <li>Device type and OS version</li>
+        </ul>
+        <p>Google's Privacy Policy: <a href="https://policies.google.com/privacy" target="_blank">https://policies.google.com/privacy</a></p>
+        <p>Upgrading to the premium version removes all advertisements.</p>
+      </div>
+      <div class="card">
+        <h3>💳 In-App Purchases (Google Play Billing)</h3>
+        <p>The App uses Google Play's billing system to process premium feature unlocks. All payment information (e.g., credit card data) is handled entirely by Google LLC. The Developer does not access, collect, or store any payment details.</p>
+        <p>Google Play Terms of Service: <a href="https://play.google.com/about/play-terms/" target="_blank">https://play.google.com/about/play-terms/</a></p>
+      </div>
+    </section>
+
+    <section>
+      <h2>How Information Is Used</h2>
+      <p>Data collected or used by this App is limited to the following purposes:</p>
+      <ul>
+        <li>Providing app functionality (sensor-based gameplay)</li>
+        <li>Serving advertisements (free version only)</li>
+        <li>Processing in-app purchases</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Disclosure to Third Parties</h2>
+      <p>The Developer will not sell, rent, or disclose user information to any third party except as required by law. Third-party services referenced in this policy (Google AdMob, Google Play Billing) process data in accordance with their own privacy policies.</p>
+    </section>
+
+    <section>
+      <h2>Children's Privacy</h2>
+      <p>This App is intended for all ages and does not knowingly collect personal information from children under the age of 13. Users can limit ad personalization by opting out via device settings (Settings → Privacy → Ads).</p>
+    </section>
+
+    <section>
+      <h2>Changes to This Policy</h2>
+      <p>This Privacy Policy may be updated without prior notice. Changes take effect upon publication on this page. Significant changes will be communicated through app updates.</p>
+    </section>
+
+    <section>
+      <h2>Contact</h2>
+      <p>For questions regarding this Privacy Policy, please contact us through the developer information on the Google Play Store page for:</p>
+      <p>App: <strong>Zen Zen - Satisfying Fidgets</strong> &nbsp; Package: <code>jp.app.t9s.zenzen</code></p>
+    </section>
+  </div>
+
+  <p class="updated">最終更新 / Last Updated: 2025年6月</p>
+</main>
+
+<script>
+  function setLang(lang) {
+    document.body.className = lang === 'en' ? 'en' : '';
+    document.getElementById('btn-ja').className = 'lang-btn' + (lang === 'ja' ? ' active' : '');
+    document.getElementById('btn-en').className = 'lang-btn' + (lang === 'en' ? ' active' : '');
+  }
+</script>
+</body>
+</html>
